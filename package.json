@@ -1,5 +1,25 @@
 {
   "name": "rasengan-skills",
   "private": true,
-  "description": "Agent skills for the Rasengan.js React framework"
+  "description": "Agent skills for the Rasengan.js React framework",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rasengan-dev/agent-skills.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rasengan-dev/agent-skills/issues"
+  },
+  "homepage": "https://github.com/rasengan-dev/agent-skills#readme",
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
 }
