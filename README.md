@@ -20,8 +20,22 @@ Skills are organized under the `rasengan/` parent folder. Each subdirectory is a
 
 ## Usage
 
+### Install all skills (recommended)
+
 ```bash
-npx skills add <owner/repo>@rasengan/<skill-name> -g -y
+npx skills add rasengan-dev/agent-skills --all
+```
+
+### Install individual skills
+
+```bash
+npx skills add rasengan-dev/agent-skills@rasengan/<skill-name> -g -y
+```
+
+### Install multiple specific skills
+
+```bash
+npx skills add rasengan-dev/agent-skills --skill rasengan/pages --skill rasengan/routing
 ```
 
 Skills are auto-loaded by your coding agent when working on Rasengan.js projects.
