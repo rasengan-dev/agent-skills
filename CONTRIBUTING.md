@@ -21,9 +21,9 @@ metadata:
 
 ## Adding a New Skill
 
-1. Create a new directory under `rasengan`: `mkdir rasengan/<skill-name>`
+1. Create a new directory under `rasengan`: `mkdir rasengan/<skill-slug>`
 2. Add a `SKILL.md` with frontmatter (`name`, `description`, `license`)
-3. The `name` must match the directory name, be 1-64 lowercase chars with hyphens
+3. The `name` must follow the `rasengan-<skill-name>` format, be 1-64 lowercase chars with hyphens
 4. The `description` must be 1-1024 characters
 5. Add any supporting rule files in a `rules/` subdirectory
 
@@ -39,7 +39,7 @@ metadata:
 Use conventional commits: `type(scope): description`
 
 Examples:
-- `feat: add rasengan/pages skill`
+- `feat: add rasengan-pages skill`
 - `fix: correct metadata merge priority example`
 - `docs: improve loader function guide`
 
