@@ -1,6 +1,6 @@
 ---
 name: rasengan-ecosystem
-description: Rasengan.js ecosystem package patterns. Covers @rasenganjs/kurama (state management), @rasenganjs/image (optimized images), @rasenganjs/theme (light/dark/system), @rasenganjs/i18n (internationalization), @rasenganjs/kage-demo (guided tours), @rasenganjs/mdx (MDX content), @rasenganjs/vercel (deployment), and @rasenganjs/serve (self-hosting). Use when integrating ecosystem packages into a Rasengan.js project.
+description: Rasengan.js ecosystem package patterns. Covers @rasenganjs/kurama (state management), @rasenganjs/image (optimized images), @rasenganjs/theme (light/dark/system), @rasenganjs/i18n (internationalization), @rasenganjs/kage-demo (guided tours), and @rasenganjs/mdx (MDX content). Use when integrating ecosystem packages into a Rasengan.js project.
 license: MIT
 metadata:
   author: dilane3
@@ -18,8 +18,6 @@ metadata:
 - Adding internationalization with `@rasenganjs/i18n`
 - Setting up MDX content with `@rasenganjs/mdx`
 - Creating guided product tours with `@rasenganjs/kage-demo`
-- Deploying to Vercel with `@rasenganjs/vercel`
-- Self-hosting with `@rasenganjs/serve`
 
 ## State Management — @rasenganjs/kurama
 
@@ -193,56 +191,6 @@ Rules:
 - The container renders a spotlight effect over the target element automatically
 - Steps are type-safe with full TypeScript inference
 
-## Deployment
-
-### Vercel
-
-```bash
-npm i @rasenganjs/vercel
-# Add build command: rasengan build
-# Add output directory: dist
-```
-
-#### Configuration
-
-```js
-// rasengan.config.js
-import { defineConfig } from "rasengan";
-import { rasengan } from "rasengan/plugin";
-import { configure } from "@rasenganjs/vercel";
- 
-export default defineConfig({
-	vite: {
-		plugins: [
-			rasengan({
-				adapter: configure(),
-			}),
-		],
-	},
-});
-```
-
-### Self-hosted (Node)
-
-```bash
-npm @rasenganjs/serve
-rasengan build
-```
-
-#### Usage
-
-```json
-// package.json
-{
-  "scripts": {
-    "serve": "rasengan-serve ./dist"
-  }
-}
-```
-
 Rules:
-- `@rasenganjs/vercel` is a dev dependency — the Vercel adapter
-- `@rasenganjs/serve` is a dev dependency — starts a production Node server
-- Build output is `dist/` — configure deployment to point there
 - `@rasenganjs/kage-demo` uses CSS selectors for element targeting — ensure target IDs/classes exist in the DOM
 - All ecosystem packages require `"type": "module"` in `package.json`
