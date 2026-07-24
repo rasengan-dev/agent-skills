@@ -4,7 +4,7 @@ description: Core API patterns for @rasenganjs/futon, the zero-dependency Winter
 license: MIT
 metadata:
   author: Dilane Kombou
-  framework: rasengan
+  framework: futon
   version: "1.0.0-beta.0"
 ---
 

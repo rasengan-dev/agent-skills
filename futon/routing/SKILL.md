@@ -4,7 +4,7 @@ description: Router and radix-tree dispatch patterns for @rasenganjs/futon. Cove
 license: MIT
 metadata:
   author: Dilane Kombou
-  framework: rasengan
+  framework: futon
   version: "1.0.0-beta.0"
 ---
 

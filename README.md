@@ -32,7 +32,7 @@ Skills are organized under per-package parent folders (`rasengan/`, `futon/`, `r
 
 ### Backend framework (`rasengan-server/`)
 
-`@rasenganjs/server` is the modular, controller-based backend framework built on `@rasenganjs/futon`, plus its closely-related ecosystem packages (`@rasenganjs/ws`, `@rasenganjs/queue`, `@rasenganjs/validators`).
+`@rasenganjs/server` is the modular, controller-based backend framework built on `@rasenganjs/futon`, plus its closely-related ecosystem packages (`@rasenganjs/ws`, `@rasenganjs/queue`, `@rasenganjs/validators`, `@rasenganjs/drizzle`).
 
 | Skill | Description | Install |
 |-------|-------------|---------|
@@ -41,6 +41,7 @@ Skills are organized under per-package parent folders (`rasengan/`, `futon/`, `r
 | `rasengan-server-websockets` | Raw app.websocket(), @rasenganjs/ws Gateways, rooms, broadcasting | `npx skills add rasengan-dev/agent-skills@rasengan-server-websockets` |
 | `rasengan-server-queues` | @rasenganjs/queue background jobs, retries/backoff, recurring jobs | `npx skills add rasengan-dev/agent-skills@rasengan-server-queues` |
 | `rasengan-server-uploads` | Multipart file uploads via futon's fileUpload() + diskStorage() | `npx skills add rasengan-dev/agent-skills@rasengan-server-uploads` |
+| `rasengan-server-drizzle` | Drizzle ORM integration — DrizzleModule.forRoot(), DataSource provider, driver adapters, migrations | `npx skills add rasengan-dev/agent-skills@rasengan-server-drizzle` |
 
 ## Usage
 

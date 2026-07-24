@@ -4,7 +4,7 @@ description: How to run a @rasenganjs/futon app on a real port or edge runtime. 
 license: MIT
 metadata:
   author: Dilane Kombou
-  framework: rasengan
+  framework: futon
   version: "1.0.0-beta.0"
 ---
 
